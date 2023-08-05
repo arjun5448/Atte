@@ -1,0 +1,144 @@
+.set{
+  top:25%;
+  left:40%;
+  position: absolute;
+  height:25%;
+  width:20%;
+}
+button:hover{
+  background-color: rgb(34, 124, 90);
+  color: azure;
+  border:2px solid white;
+}
+button{
+  background:none;
+}
+.Homehead{
+  top:30%;
+  left :30%;
+  font-size: 50px;
+  color: rgb(12, 78, 56);
+  position: absolute;
+}
+.bod{
+  background-image:url("http://getwallpapers.com/wallpaper/full/1/c/1/598485.jpg");
+  background-size: cover;
+  height: 100%;
+  width:100%;
+  position: absolute;
+}
+.nav{
+  top: -1%;
+  position: absolute;
+}
+
+
+.home-a{
+  top:60%;
+  left:35%;
+  position: absolute;
+  height: 5%;
+  width:20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul{
+  list-style:none;
+  left: 60%;
+  position: absolute;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+ 
+}
+
+li:hover{
+  background-color: rgb(12, 68, 50);
+ 
+}
+input{
+  margin-top: 4px;
+  margin-bottom: 24px;
+  outline: none;
+  color: rgb(238, 239, 238);
+  border-bottom:2px solid rgb(29, 99, 77);
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  background: none;
+  width:100%;
+
+}
+.Grid{
+  top:20%;
+  left:37%;
+  position: absolute;
+  height:30%;
+  width: 30%;
+  display: grid;
+  column-gap: 1%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  color:rgb(223, 150, 55)
+}.bu{
+  top:55%;
+  left:45%;
+  position: absolute;
+
+}
+.btn:hover{
+width:100%;
+color:aliceblue;
+background-color: rgb(63, 151, 122);
+height:25px;
+border: 3px solid;
+
+
+}
+a:link{
+  border:2px solid rgb(18, 91, 72);
+  text-decoration: none;
+}
+h2{
+  text-align:center;
+}
+button #home-btn:hover{
+background-color: red;
+}
+input:hover{
+  COLOR:rgb(251, 240, 240);
+  border-bottom: 5px solid rgb(38, 98, 77);
+
+}
+u{
+  color: rgb(239, 196, 136);
+}
+#attendence-heading{
+  text-align: center;
+  color: rgb(30, 68, 55);
+}
+select{
+  text-align: center;
+  margin-top: 17px;
+  width: 50%;
+  height: 50%;
+  border:3px solid wheat;
+  outline: none;
+  background-color: rgb(52, 91, 78);
+  color: rgb(243, 235, 235);
+  margin-left: 5px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
