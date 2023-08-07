@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Signup from './components/Signup';
 import Log from './components/Log';
 import "./App.css";
+import ShowAttendence from './components/ShowAttendence';
 import Attendenc from './components/Attendence';
 
 function App() {
@@ -15,13 +16,16 @@ function App() {
 
   return (
     <div>
-      <nav className='nav'>
+      <nav className>
         <ul>
           <li>
             <button onClick={() => navigateTo('home')}>Home</button>
           </li>
           <li>
             <button onClick={() => navigateTo('attend')}>Attendence</button>
+          </li>
+          <li>
+            <button onClick={() => navigateTo('show')}>Show-Attendence</button>
           </li>
           <li>
             <button onClick={() => navigateTo('log')}>LogIn</button>
@@ -34,6 +38,7 @@ function App() {
       </nav>
 
       {page === 'home' && <Home />}
+      {page === 'show' && <ShowAttendence />}
       {page === 'log' && <Log />}
       {page === 'attend' && <Attendenc />}
       {page === 'Sign' && <Signup />}
