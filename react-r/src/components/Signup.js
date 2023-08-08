@@ -1,8 +1,14 @@
 import React from 'react';
-
-function Signup() {
+import {Link} from 'react-router-dom';
+function Create() {
   return (
+    <div>
+       <div className='h'>
+        <Link to="/" className='class-link'>Home</Link>
+      </div>
+  
     <div className="set">
+        
              
     <div><h2>SIGN UP</h2></div>
     <form method="post">
@@ -31,11 +37,12 @@ function Signup() {
     <input type="password" ></input>
 
     </form>
-    <button value="submit" class="btn">SIGN UP</button>
+    <Link to="/log" className='class-link'>SIGN-UP</Link>
 
+  </div>
   </div>
    
   )
 }
 
-export default Signup;
+export default Create;

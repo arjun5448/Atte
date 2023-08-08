@@ -5,14 +5,50 @@
   height:25%;
   width:20%;
 }
+
+.bck{
+  background-color: rgb(7, 62, 44);
+  color: rgb(232, 131, 30);
+  border:3px solid rgb(11, 133, 101) ;
+  height: 20px;
+  width:98px;
+}
+
+.h{
+  top:5%;
+  left:5%;
+  position:absolute;
+}
+.class-link{
+  color: rgb(251, 245, 245);
+  border: 5px solid rgb(5, 71, 44);
+  padding:5px;
+}
+.class-link:hover{
+  color:rgb(6, 74, 57);
+
+  border-color: rgb(247, 244, 236);
+}
+
 button:hover{
   background-color: rgb(34, 124, 90);
   color: azure;
   border:2px solid white;
 }
+#here{
+ top:60%;
+ left: 15%;
+ position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 3px;
+  
+}
 button{
   background:none;
 }
+
 .Homehead{
   top:30%;
   left :30%;
@@ -27,10 +63,6 @@ button{
   width:100%;
   position: absolute;
 }
-.nav{
-  top: -1%;
-  position: absolute;
-}
 
 
 .home-a{
@@ -43,22 +75,8 @@ button{
   justify-content: space-around;
   align-items: center;
 }
-ul{
-  list-style:none;
-  left: 0%;
-  position: absolute;
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  
- 
-}
 
-li:hover{
-  background-color: rgb(12, 68, 50);
- 
-}
+
 input{
   margin-top: 4px;
   margin-bottom: 24px;
@@ -105,9 +123,7 @@ a:link{
 h2{
   text-align:center;
 }
-button #home-btn:hover{
-background-color: red;
-}
+
 input:hover{
   COLOR:rgb(251, 240, 240);
   border-bottom: 5px solid rgb(38, 98, 77);

@@ -1,7 +1,8 @@
 
 import React from 'react';
-
-   function Home(){ return(
+import {Link} from 'react-router-dom';
+function Home(){
+    return(
         <div>
             
             <div className='Homehead'>
@@ -9,8 +10,10 @@ import React from 'react';
                 </div>
 
             <div className='home-a'>
-            <button>FACULTY_LOGIN</button>
-            <button>STUDENT_LOGIN</button>
+            
+                <Link to="/log" className='class-link'>FACULTY_LOGIN</Link>
+            
+            <Link to="/log"  className='class-link'>STUDENT_LOGIN</Link>
               
             </div>
         </div>

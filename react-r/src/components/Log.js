@@ -1,27 +1,49 @@
 
 import React from 'react';
 
-function Log() {
-  return(
+import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-    <div className="set">
+function Log() {
+  const history = useNavigate();
+
+  const handleButtonClick = () => {
+
+    const rol=document.getElementById("rol").value;
+    const pas=document.getElementById("pas").value;
+    if(rol==="20PA1A5448" && pas==="ai48"){
+     history("/Atte")
+    }
+    else{
+      history("/sin");
+    }
+
+}
+  return(
+    <div>
+      <div className='h'>
+        <Link to="/" className='class-link'>Home</Link>
+      </div>
+      <div className="set">
+    
     <div><h2>LogIn</h2></div>
     <form method="post">
     <label>
       <i>RollNumber</i>
     </label>
-    <input type="text" ></input>
+    <input type="text"  id='rol'></input>
     <br></br>
     <label>
       <i>Password</i>
     </label>
     <br></br>
-    <input type="password" ></input>
+    <input type="password" id="pas"></input>
+
 
     </form>
-    <button value="submit" className='btn'>Log IN</button>
+    <button onClick={handleButtonClick} id="hr" className='btn'>LogIn</button>
 
-  </div>
+  </div></div>
    
 )
 }

@@ -1,12 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 function Attendence(){
+    function retrive(){
+        const year=document.getElementById('yr').value;
+        let v="20PA1A5448";
+        if(year==="I"){
+            v="21PA1A5448";
+        }
+        for(let i=1; i<=30;i++){
+            const f=document.createElement('div');
+           f.className="bck";
+           f.style.background="lightyellow";
+            f.innerText=v;
+            document.getElementById('here').appendChild(f);
+
+        }
+    }
     return(
-    <div><u><h1 id="attendence-heading">
+    <div>
+        <u><h1 id="attendence-heading">
         ATTENDENCE
     </h1></u>
+    <div className='h'>
+        <Link to="/" className='class-link'>Home</Link>
+      </div>
    <div className="Grid">
        
-        <label><h2>BRANCH</h2></label><select id="BRANCEHS">
+        <label><h2>BRANCH</h2></label><select id="br">
             <option>AI&ML</option>
             <option>AI&DS</option>
             <option>CSBS</option>
@@ -19,7 +40,7 @@ function Attendence(){
      
         </select>
   
-        <label><h2>YEAR</h2></label><select id="BRANCEHS">
+        <label><h2>YEAR</h2></label><select id="yr">
             <option>I</option>
             <option>II</option>
             <option>III</option>
@@ -33,7 +54,10 @@ function Attendence(){
         </select>
         <div></div>
         </div>
-        <button className='bu'>TAKE ATTENDENCE</button>
+        <button className='bu' onClick={retrive}>TAKE ATTENDENCE</button>
+        <div id="here">
+
+        </div>
     </div>
 )
 }
