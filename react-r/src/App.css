@@ -7,11 +7,18 @@
 }
 
 .bck{
-  background-color: rgb(7, 62, 44);
-  color: rgb(232, 131, 30);
-  border:3px solid rgb(11, 133, 101) ;
+  background-color: rgb(244, 244, 247);
+  color: rgb(7, 77, 48);
+  border:3px solid rgb(10, 63, 48) ;
   height: 20px;
   width:98px;
+}
+.bck:hover{
+  background-color: rgb(7, 79, 58);
+  border: 5px solid rgb(248, 167, 120);
+  margin-top: 10%;
+  padding-bottom: 10%;
+  color: azure;
 }
 
 .h{
@@ -43,6 +50,7 @@ button:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 5px;
   grid-column-gap: 3px;
+
   
 }
 button{

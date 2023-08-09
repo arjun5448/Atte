@@ -10,8 +10,18 @@ function Attendence(){
         }
         for(let i=1; i<=30;i++){
             const f=document.createElement('div');
+            function check(){
+                if(this.style.color=="orange"){
+                    this.style.color="green";
+                }
+                else{
+                    this.style.color="orange";
+                }
+
+               
+            }
+            f.onclick=check;
            f.className="bck";
-           f.style.background="lightyellow";
             f.innerText=v;
             document.getElementById('here').appendChild(f);
 
@@ -52,7 +62,6 @@ function Attendence(){
             <option>B</option>
             <option>C</option>
         </select>
-        <div></div>
         </div>
         <button className='bu' onClick={retrive}>TAKE ATTENDENCE</button>
         <div id="here">
