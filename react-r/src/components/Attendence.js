@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 function Attendence(){
     function retrive(){
+ 
         const year=document.getElementById('yr').value;
+    
+
         let v="20PA1A5448";
         if(year==="I"){
             v="21PA1A5448";
@@ -11,7 +14,7 @@ function Attendence(){
         for(let i=1; i<=30;i++){
             const f=document.createElement('div');
             function check(){
-                if(this.style.color=="orange"){
+                if(this.style.color==="orange"){
                     this.style.color="green";
                 }
                 else{
@@ -57,13 +60,22 @@ function Attendence(){
             <option>IV</option>
         </select>
         <label><h2>SECTION</h2></label>
-        <select id="section">
+        <select id="sc">
             <option>A</option>
             <option>B</option>
             <option>C</option>
         </select>
+        <label><h2>SUBJECT</h2></label><select id="subject">
+            <option>M-1</option>
+            <option>PYTHON</option>
+            <option>CHEMISTRY</option>
+            <option>SE</option>
+        </select>
         </div>
         <button className='bu' onClick={retrive}>TAKE ATTENDENCE</button>
+        <div id='at-head'>
+
+        </div>
         <div id="here">
 
         </div>

@@ -5,19 +5,24 @@
   height:25%;
   width:20%;
 }
-
+.atte-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .bck{
   background-color: rgb(244, 244, 247);
   color: rgb(7, 77, 48);
-  border:3px solid rgb(10, 63, 48) ;
+  border:3px solid rgb(4, 83, 62) ;
   height: 20px;
   width:98px;
 }
 .bck:hover{
   background-color: rgb(7, 79, 58);
   border: 5px solid rgb(248, 167, 120);
-  margin-top: 10%;
-  padding-bottom: 10%;
+  width: 200px;
+  font-size: 35px;
+  height: 50px;
   color: azure;
 }
 
@@ -99,14 +104,14 @@ input{
 
 }
 .Grid{
-  top:20%;
+  top:15%;
   left:37%;
   position: absolute;
   height:30%;
   width: 30%;
   display: grid;
   column-gap: 1%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr  1fr 1fr;
   grid-template-columns: 1fr 1fr;
   color:rgb(223, 150, 55)
 }.bu{
