@@ -42,6 +42,8 @@ function Log() {
 
     </form>
     <button onClick={handleButtonClick} id="hr" className='btn'>LogIn</button>
+    <br></br>
+    <button onClick={handleButtonClick} id="hr" className='btn'>forgoten?</button>
 
   </div></div>
    
