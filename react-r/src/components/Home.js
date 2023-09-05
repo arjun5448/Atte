@@ -11,9 +11,7 @@ function Home(){
 
             <div className='home-a'>
             
-                <Link to="/log" className='class-link'>FACULTY_LOGIN</Link>
-            
-            <Link to="/log"  className='class-link'>STUDENT_LOGIN</Link>
+            <Link to="/log"  className='class-link'>LOGIN</Link>
               
             </div>
         </div>

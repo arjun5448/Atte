@@ -5,6 +5,11 @@
   height:25%;
   width:20%;
 }
+.Show{
+  position: absolute;
+  top :20%;
+  left:40%;
+}
 .atte-head{
   display: flex;
   justify-content: space-between;
@@ -33,7 +38,7 @@
 }
 .class-link{
   color: rgb(251, 245, 245);
-  border: 5px solid rgb(5, 71, 44);
+  border: 2px solid rgb(5, 71, 44);
   padding:5px;
 }
 .class-link:hover{
@@ -136,6 +141,9 @@ a:link{
 h2{
   text-align:center;
 }
+.bg{
+  background-image: url("https://wallpaperaccess.com/full/2225096.jpg");
+}
 
 input:hover{
   COLOR:rgb(251, 240, 240);
@@ -149,12 +157,15 @@ u{
   text-align: center;
   color: rgb(30, 68, 55);
 }
+select:hover{
+  border: 3px solid rgb(249, 245, 244);
+}
 select{
   text-align: center;
   margin-top: 17px;
   width: 50%;
   height: 50%;
-  border:3px solid wheat;
+  border:3px solid rgb(249, 214, 149);
   outline: none;
   background-color: rgb(52, 91, 78);
   color: rgb(243, 235, 235);

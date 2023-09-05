@@ -11,8 +11,11 @@ function Log() {
 
     const rol=document.getElementById("rol").value;
     const pas=document.getElementById("pas").value;
-    if(rol==="20PA1A5448" && pas==="ai48"){
-     history("/Atte")
+    if(rol==="20PA1A5448F" && pas==="ai48"){
+     history("/Atte");
+    }
+    else if(rol==="20PA1A5448" && pas==="ai48"){
+      history("/ShowAttendence");
     }
     else{
       history("/sin");
@@ -42,8 +45,7 @@ function Log() {
 
     </form>
     <button onClick={handleButtonClick} id="hr" className='btn'>LogIn</button>
-    <br></br>
-    <button onClick={handleButtonClick} id="hr" className='btn'>forgoten?</button>
+
 
   </div></div>
    

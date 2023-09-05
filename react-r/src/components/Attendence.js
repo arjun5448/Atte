@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 function Attendence(){
+    let T=false
     function retrive(){
- 
-        const year=document.getElementById('yr').value;
-    
-
+        if(T==false){
+            const year=document.getElementById('yr').value;
         let v="20PA1A5448";
         if(year==="I"){
             v="21PA1A5448";
@@ -20,15 +18,14 @@ function Attendence(){
                 else{
                     this.style.color="orange";
                 }
-
-               
             }
             f.onclick=check;
            f.className="bck";
             f.innerText=v;
             document.getElementById('here').appendChild(f);
-
         }
+        T=true;
+    }
     }
     return(
     <div>
@@ -39,7 +36,6 @@ function Attendence(){
         <Link to="/" className='class-link'>Home</Link>
       </div>
    <div className="Grid">
-       
         <label><h2>BRANCH</h2></label><select id="br">
             <option>AI&ML</option>
             <option>AI&DS</option>
@@ -50,9 +46,7 @@ function Attendence(){
             <option>EEE</option>
             <option>CIVIL</option>
             <option>MECH</option>
-     
         </select>
-  
         <label><h2>YEAR</h2></label><select id="yr">
             <option>I</option>
             <option>II</option>
@@ -74,10 +68,8 @@ function Attendence(){
         </div>
         <button className='bu' onClick={retrive}>TAKE ATTENDENCE</button>
         <div id='at-head'>
-
         </div>
         <div id="here">
-
         </div>
     </div>
 )
